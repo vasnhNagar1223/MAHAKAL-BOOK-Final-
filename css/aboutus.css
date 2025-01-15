@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #1a205a;
+}
+.heading {
+  font-family: Cinzel;
+}
+.heading2 {
+  font-display: Bebas Neue;
+}
+.page1 {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav {
+  background-color: #1e1f24;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  color: white;
+}
+.navSideBar {
+  display: none;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0 3vw;
+}
+.nav ul a {
+  text-decoration: none;
+  color: white;
+}
+.nav ul div {
+  font-size: 1.1vw;
+}
+.LlogoLink {
+  width: 40vw;
+}
+
+.Llogo {
+  padding: 0 3vw;
+  width: 70%;
+  margin-left: -10%;
+}
+.logo {
+  display: none;
+}
+.nav i {
+  display: none;
+}
+.logo {
+  display: none;
+}
+.nav ul div {
+  position: relative;
+}
+.nav ul div:hover {
+  animation-name: links;
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.nav ul div::before {
+  content: "";
+  position: absolute;
+  background-color: #eaa138;
+  height: 0.3vh;
+  width: 100%;
+  bottom: -2px;
+  transform: scaleX(0);
+  transition: transform 200ms ease-out;
+}
+
+.nav ul div:hover::before {
+  transform: scaleX(1);
+}
+.contactUsFixedDiv {
+  position: fixed;
+  bottom: 1vw;
+  right: 2vw;
+  background-color: #ffffff21;
+  color: white;
+  padding: 1vw 1.5vw;
+  border-radius: 999px;
+  font-family: Bebas Neue;
+}
+
+@keyframes links {
+  0% {
+    translate: 0px 0px;
+  }
+  100% {
+    translate: 0px 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    height: 60px;
+  }
+  .navSideBar {
+    display: none;
+  }
+  .Llogo {
+    display: none;
+  }
+  .nav ul {
+    display: none;
+  }
+  .LlogoLink {
+    display: none;
+  }
+  .logo {
+    display: initial;
+    height: 70%;
+    margin-left: 4vw;
+  }
+
+  .nav i {
+    font-size: 6vw;
+    display: initial;
+    padding: 8vw;
+  }
+}

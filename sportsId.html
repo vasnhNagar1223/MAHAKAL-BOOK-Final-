@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/aboutus.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="css/button86.css" />
+  </head>
+  <body>
+    <div class="page1">
+      <div class="nav">
+        <a class="LlogoLink" href="index.html">
+          <img class="Llogo" src="Icons/logo-2transparent-png.png" alt="" />
+        </a>
+        <img class="logo" src="Icons/image (1).png" alt="hi" />
+        <ul>
+          <a href="index.html"><div>Home</div></a>
+
+          <a href="Platform.html" class="navLink">
+            <div>Platforms</div>
+          </a>
+
+          <a href="service.html"> <div>Services</div> </a>
+          <a href="sportsId.html"><div>Sports ID</div></a>
+          <a href="rules.html"><div>Rules</div></a>
+          <a href="aboutUS.html"> <div>About Us</div> </a>
+          <a href="contactus.html"> <div>Contact Us</div> </a>
+        </ul>
+
+        <i onclick="handlesidebarButton()" class="ri-menu-line"></i>
+      </div>
+      <div
+        class="navSideBar fixed z-50 right-0 bottom-0 top-0 w-[70%] bg-secondray bg-opacity-90 text-white text-[5vw]"
+      >
+        <i
+          onclick="handleCloseButtonclick()"
+          class="closebutton ri-close-large-line py-[6vw] px-[6vw] w-full flex justify-start"
+        ></i>
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="index.html"
+          ><div>Home</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="Platform.html"
+          class="navLink"
+          ><div>Platforms</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="service.html"
+        >
+          <div>Services</div>
+        </a>
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="sportsId.html"
+          ><div>Sports ID</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="rules.html"
+          ><div>Rules</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="aboutUS.html"
+        >
+          <div>About Us</div>
+        </a>
+        <a
+          class="border-y py-[6vw] w-full flex justify-center"
+          href="contactus.html"
+        >
+          <div>Contact Us</div>
+        </a>
+      </div>
+      <div class="content flex flex-col justify-center p-[2vw]">
+        <h1
+          class="animate1 heading text-secondray text-[2.7vw] text-center max-sm:text-[8vw]"
+        >
+          Welcome to Mahakal Book Sports ID – your one-stop destination for
+          everything sports!
+        </h1>
+        <div
+          class="flex flex-col relative px-[7vw] gap-[2vw] justify-center text-white text-[1vw]"
+        >
+          <h2 class="animate1 text-[1.4vw] text-center max-sm:text-[4vw]">
+            At Mahakal Book Sports ID, we're dedicated to providing
+            comprehensive sports coverage across various sports. Whether you’re
+            a cricket fanatic, a football follower, a tennis lover, or someone
+            passionate about baseball, horse racing, kabaddi, and more, we bring
+            you all the updates, news, and in-depth insights that fuel your
+            passion for sports.
+          </h2>
+
+          <div class="container mx-auto p-6">
+            <!-- Cricket Section -->
+            <section class="mb-10">
+              <h1
+                class="animate1 text-[1.4vw] text-lime-400 max-sm:text-[6vw] font-bold mb-4"
+              >
+                Cricket
+              </h1>
+              <p class="animate1 text-[1.2vw] max-sm:text-[4vw] mb-2">
+                Cricket is more than just a game; it’s an emotion. Whether it's
+                Test matches, thrilling T20s, or nail-biting ODIs, cricket has
+                it all. Get live scores, player stats, match highlights, and
+                expert opinions to stay on top of every match and tournament.
+                Stay connected with us for the latest updates!
+              </p>
+              <p class="animate1 text-[1vw] max-sm:text-[4vw] text-gray-400">
+                Contact us @ 9772903831
+              </p>
+            </section>
+
+            <!-- Football Section -->
+            <section class="mb-10">
+              <h1
+                class="animate1 text-[1.4vw] text-pink-600 max-sm:text-[6vw] font-bold mb-4"
+              >
+                Football
+              </h1>
+              <p class="animate1 text-[1.2vw] max-sm:text-[4vw] mb-2">
+                Football is the world's favourite sport, bringing people
+                together with its electrifying atmosphere and unforgettable
+                moments. From Champions League finals to local league matches,
+                we cover everything – match previews, post-match analysis,
+                transfer rumours, and player interviews. Dive into the football
+                world with us and stay ahead!
+              </p>
+              <p class="animate1 text-[1vw] max-sm:text-[4vw] text-gray-400">
+                Contact us @ 9772903831
+              </p>
+            </section>
+
+            <!-- Tennis Section -->
+            <section class="mb-10">
+              <h1
+                class="animate1 text-[1.4vw] text-purple-600 max-sm:text-[6vw] font-bold mb-4"
+              >
+                Tennis
+              </h1>
+              <p class="animate1 text-[1.2vw] max-sm:text-[4vw] mb-2">
+                With its perfect blend of power and precision, tennis is a sport
+                that captivates millions. Follow the latest tournament results,
+                rankings, and match analysis from the world’s top players.
+                Whether it’s Wimbledon, the US Open, or other major events,
+                Mahakal Book Sports ID keeps you in the loop with expert
+                insights.
+              </p>
+              <p class="animate1 text-[1vw] max-sm:text-[4vw] text-gray-400">
+                Contact us @ 9772903831
+              </p>
+            </section>
+
+            <!-- Baseball Section -->
+            <section class="mb-10">
+              <h1
+                class="animate1 text-[1.4vw] text-yellow-300 max-sm:text-[6vw] font-bold mb-4"
+              >
+                Baseball
+              </h1>
+              <p class="animate1 text-[1.2vw] max-sm:text-[4vw] mb-2">
+                Baseball, America’s pastime, is full of tradition, excitement,
+                and passion. With extensive coverage of Major League Baseball
+                (MLB), we bring you game highlights, player profiles, and
+                in-depth analyses that keep fans engaged year-round.
+              </p>
+              <p class="animate1 text-[1vw] max-sm:text-[4vw] text-gray-400">
+                Contact us @ 9772903831
+              </p>
+            </section>
+
+            <!-- Kabaddi Section -->
+            <section class="mb-10">
+              <h1
+                class="animate1 text-[1.4vw] text-emerald-500 max-sm:text-[6vw] font-bold mb-4"
+              >
+                Kabaddi
+              </h1>
+              <p class="animate1 text-[1.2vw] max-sm:text-[4vw] mb-2">
+                Kabaddi, a sport deeply rooted in Indian tradition, has grown
+                into a global phenomenon. Stay updated with the Pro Kabaddi
+                League (PKL), match highlights, player profiles, and expert
+                analysis that covers this fast-paced, thrilling sport.
+              </p>
+              <p class="animate1 text-[1vw] max-sm:text-[4vw] text-gray-400">
+                Contact us @ 9772903831
+              </p>
+            </section>
+
+            <!-- Horse Racing Section -->
+            <section class="mb-10">
+              <h1
+                class="animate1 text-[1.4vw] text-rose-600 max-sm:text-[6vw] font-bold mb-4"
+              >
+                Horse Racing
+              </h1>
+              <p class="animate1 text-[1.2vw] max-sm:text-[4vw] mb-2">
+                Experience the thrill of horse racing, with its speed, strategy,
+                and elegance. From prestigious races like the Kentucky Derby to
+                global competitions such as the Dubai World Cup, Mahakal Book
+                Sports ID offers insights, race previews, and expert betting
+                tips.
+              </p>
+              <p class="animate1 text-[1vw] max-sm:text-[4vw] text-gray-400">
+                Contact us @ 9772903831
+              </p>
+            </section>
+
+            <!-- Closing Section -->
+            <section class="text-center">
+              <p class="animate1 text-[1.2vw] max-sm:text-[4vw] mb-4">
+                At Mahakal Book Sports ID, we bring you closer to the sports you
+                love. From casual fans to die-hard enthusiasts, we provide the
+                latest news, analysis, and updates to keep you connected to the
+                athletes and events that inspire us all.
+              </p>
+              <p class="animate1 text-[1.2vw] max-sm:text-[4vw]">
+                For more information and in-depth coverage, contact us at
+                9772903831. Join us today and stay tuned to the world of sports!
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div
+        onclick="sendToWhatsApp()"
+        class="contactUsFixedDiv cursor-pointer hover:bg-secondray"
+      >
+        Contact us @9772903831
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script/aboutus.js"></script>
+  </body>
+</html>
