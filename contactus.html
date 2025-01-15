@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="css/aboutus.css" />
     <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="css/contactus.css" />
     <link rel="stylesheet" href="css/button86.css" />
   </head>
   <body>
@@ -49,15 +49,52 @@
 
         <i onclick="handlesidebarButton()" class="ri-menu-line"></i>
       </div>
-      <div class="navSideBar  fixed z-50 right-0 bottom-0 top-0 w-[70%] bg-secondray  bg-opacity-90 text-white     text-[5vw]">
-        <i onclick="handleCloseButtonclick()" class="closebutton ri-close-large-line  py-[6vw] px-[6vw]  w-full flex justify-start"></i>
-        <a class="border-t py-[6vw] w-full flex justify-center"   href="index.html"><div>Home</div></a>
-        <a class="border-t py-[6vw] w-full flex justify-center"  href="Platform.html" class="navLink" ><div>Platforms</div></a>
-        <a class="border-t py-[6vw] w-full flex justify-center"  href="service.html"> <div>Services</div> </a>
-        <a class="border-t py-[6vw] w-full flex justify-center"  href="sportsId.html"><div>Sports ID</div></a>
-        <a class="border-t py-[6vw] w-full flex justify-center"  href="rules.html"><div>Rules</div></a>
-        <a class="border-t py-[6vw] w-full flex justify-center"  href="aboutUS.html"> <div>About Us</div> </a>
-        <a class="border-y py-[6vw] w-full flex justify-center"  href="contactus.html"> <div>Contact Us</div> </a>
+      <div
+        class="navSideBar fixed z-50 right-0 bottom-0 top-0 w-[70%] bg-secondray bg-opacity-90 text-white text-[5vw]"
+      >
+        <i
+          onclick="handleCloseButtonclick()"
+          class="closebutton ri-close-large-line py-[6vw] px-[6vw] w-full flex justify-start"
+        ></i>
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="index.html"
+          ><div>Home</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="Platform.html"
+          class="navLink"
+          ><div>Platforms</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="service.html"
+        >
+          <div>Services</div>
+        </a>
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="sportsId.html"
+          ><div>Sports ID</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="rules.html"
+          ><div>Rules</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="aboutUS.html"
+        >
+          <div>About Us</div>
+        </a>
+        <a
+          class="border-y py-[6vw] w-full flex justify-center"
+          href="contactus.html"
+        >
+          <div>Contact Us</div>
+        </a>
       </div>
       <div class="content flex flex-col justify-center p-[2vw]">
         <h1
@@ -132,50 +169,49 @@
           </h1>
         </div>
       </div>
-      <div class="container ">
-        <div onclick="sendToWhatsAppString()" class="text cursor-pointer">
-           CONTACT US FORM
-        </div>
+      <div class="container">
+        <div class="text">CONTACT US FORM</div>
         <form action="#">
-           <div class="form-row">
-              <div class="input-data">
-                 <input class="First-Name" type="text" required>
-                 <div class="underline"></div>
-                 <label for="">First Name</label>
-              </div>
-              <div class="input-data">
-                 <input class="Last-Name" type="text" required>
-                 <div class="underline"></div>
-                 <label for="">Last Name</label>
-              </div>
-           </div>
-           <div class="form-row">
-              <div class="input-data">
-                 <input class="E-mail" type="text" required>
-                 <div class="underline"></div>
-                 <label for="">Email Address</label>
-              </div>
-              <div class="input-data">
-                 <input class="dateOfBirth" type="text" required>
-                 <div class="underline"></div>
-                 <label for="">Date of Birth </label>
-              </div>
-           </div>
-           <div class="form-row">
-           <div class="input-data textarea">
-              <textarea rows="8" cols="80" required></textarea>
+          <div class="form-row">
+            <div class="input-data">
+              <input class="First-Name" type="text" required />
+              <div class="underline"></div>
+              <label for="">First Name</label>
+            </div>
+            <div class="input-data">
+              <input class="Last-Name" type="text" required />
+              <div class="underline"></div>
+              <label for="">Last Name</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+              <input class="E-mail" type="text" required />
+              <div class="underline"></div>
+              <label for="">Email Address</label>
+            </div>
+            <div class="input-data">
+              <input class="dateOfBirth" type="text" required />
+              <div class="underline"></div>
+              <label for="">Date of Birth </label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data textarea">
+              <textarea class="Message" rows="8" cols="80" required></textarea>
               <br />
               <div class="underline"></div>
               <label for="">Write your message</label>
               <br />
-              <div class="form-row submit-btn">
-                 <div class="input-data">
-                    <div class="inner"></div>
-                    <input class="Message" type="Message" value="Hi">
-                 </div>
-              </div>
+            </div>
+          </div>
+          <div class="form-row-send">
+            <button class="sendButton" onclick="sendToWhatsAppString()">
+              Send
+            </button>
+          </div>
         </form>
-        </div>
+      </div>
     </div>
 
     <script

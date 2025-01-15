@@ -155,3 +155,29 @@ form .form-row .textarea {
     width: 40% !important;
   }
 }
+
+.form-row-send {
+  display: flex;
+  justify-content: center;
+}
+
+.sendButton {
+  background-color: #eaa138;
+  width: auto;
+  border: 1px solid white;
+  padding: 1vw 4vw;
+  border-radius: 999px;
+  margin-bottom: 4vw;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-linear-gradient(
+    right,
+    #56d8e4,
+    #9f01ea,
+    #56d8e4,
+    #9f01ea
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
